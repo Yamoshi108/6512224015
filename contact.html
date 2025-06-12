@@ -59,15 +59,21 @@
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">อีเมลของคุณ</label>
-            <input type="email" class="form-control" name="อีเมล" placeholder="your@email.com" required>
+            <!-- ต้องใช้ name="email" ภาษาอังกฤษเท่านั้น -->
+            <input type="email" class="form-control" name="email" placeholder="your@email.com" required>
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">ข้อความ</label>
             <textarea class="form-control" name="ข้อความ" rows="4" placeholder="เขียนข้อความที่ต้องการติดต่อ" required></textarea>
           </div>
+
+          <!-- ซ่อนช่อง spam -->
           <input type="text" name="_honey" style="display:none">
+          <!-- ปิด CAPTCHA -->
           <input type="hidden" name="_captcha" value="false">
+          <!-- Redirect หลังส่ง -->
           <input type="hidden" name="_next" value="https://yamoshi108.github.io/6512224015/thankyou.html">
+
           <button type="submit" class="btn btn-dark">ส่งอีเมล</button>
         </form>
 
