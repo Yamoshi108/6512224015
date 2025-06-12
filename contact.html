@@ -52,8 +52,7 @@
     <h2 class="text-center mb-4">ติดต่อวงคณะขวัญใจ</h2>
     <div class="row justify-content-center">
       <div class="col-md-8 contact-box">
-        <!-- ปรับใช้ Formsubmit แทน mailto -->
-        <form action="https://formsubmit.co/your@email.com" method="POST">
+        <form action="https://formsubmit.co/el/muvetu" method="POST">
           <div class="mb-3">
             <label for="name" class="form-label">ชื่อของคุณ</label>
             <input type="text" class="form-control" name="ชื่อ" placeholder="กรอกชื่อ" required>
@@ -66,11 +65,8 @@
             <label for="message" class="form-label">ข้อความ</label>
             <textarea class="form-control" name="ข้อความ" rows="4" placeholder="เขียนข้อความที่ต้องการติดต่อ" required></textarea>
           </div>
-          <!-- Anti-spam (honeypot) -->
           <input type="text" name="_honey" style="display:none">
-          <!-- ปิด CAPTCHA -->
           <input type="hidden" name="_captcha" value="false">
-          <!-- หน้า redirect หลังส่งสำเร็จ -->
           <input type="hidden" name="_next" value="https://yamoshi108.github.io/6512224015/thankyou.html">
           <button type="submit" class="btn btn-dark">ส่งอีเมล</button>
         </form>
