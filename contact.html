@@ -52,29 +52,37 @@
     <h2 class="text-center mb-4">ติดต่อวงคณะขวัญใจ</h2>
     <div class="row justify-content-center">
       <div class="col-md-8 contact-box">
-        <form>
+        <form action="mailto:your@email.com" method="POST" enctype="text/plain">
           <div class="mb-3">
             <label for="name" class="form-label">ชื่อของคุณ</label>
-            <input type="text" class="form-control" id="name" placeholder="กรอกชื่อ">
+            <input type="text" class="form-control" name="ชื่อ" placeholder="กรอกชื่อ">
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">อีเมล</label>
-            <input type="email" class="form-control" id="email" placeholder="your@email.com">
+            <label for="email" class="form-label">อีเมลของคุณ</label>
+            <input type="email" class="form-control" name="อีเมล" placeholder="your@email.com">
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">ข้อความ</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="เขียนข้อความที่ต้องการติดต่อ"></textarea>
+            <textarea class="form-control" name="ข้อความ" rows="4" placeholder="เขียนข้อความที่ต้องการติดต่อ"></textarea>
           </div>
-          <button type="submit" class="btn btn-dark">ส่งข้อความ</button>
+          <button type="submit" class="btn btn-dark">ส่งอีเมล</button>
         </form>
+
+        <hr class="my-4">
+
+        <div class="text-center">
+          <p class="mb-2">หรือส่งข้อความทาง SMS:</p>
+          <a href="sms:0981234567?body=สวัสดีครับ อยากติดต่อวงคณะขวัญใจ" class="btn btn-success">ส่ง SMS</a>
+        </div>
+
         <hr>
-        <p class="mt-3">สามารถติดต่อวงได้ทาง Facebook หรือ โทร: 098-******</p>
+        <p class="mt-3">สามารถติดต่อวงได้ทาง Facebook หรือ โทร: 098-1234567</p>
       </div>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 คณะขวัญใจ. สงวนลิขสิทธิ์.
+    &copy; 2025 คณะขวัญใจ. สงวนลิขสิทธิ์.<br>
     6512224015 จักรภัทร ปิ่นทอง
   </footer>
 </body>
